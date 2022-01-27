@@ -1,0 +1,15 @@
+E:\Private\TaxManager\TaxManager\TaxManager\bin\Release\amd64\libzmq.dll
+E:\Private\TaxManager\TaxManager\TaxManager\bin\Release\i386\libzmq.dll
+E:\Private\TaxManager\TaxManager\TaxManager\bin\Release\amd64\libzmq.so
+E:\Private\TaxManager\TaxManager\TaxManager\bin\Release\amd64\libzmq.dylib
+E:\Private\TaxManager\TaxManager\TaxManager\bin\Release\TaxManager.dll
+E:\Private\TaxManager\TaxManager\TaxManager\bin\Release\TaxManager.pdb
+E:\Private\TaxManager\TaxManager\TaxManager\bin\Release\Newtonsoft.Json.dll
+E:\Private\TaxManager\TaxManager\TaxManager\bin\Release\ZeroMQ.dll
+E:\Private\TaxManager\TaxManager\TaxManager\bin\Release\Newtonsoft.Json.xml
+E:\Private\TaxManager\TaxManager\TaxManager\bin\Release\ZeroMQ.xml
+E:\Private\TaxManager\TaxManager\TaxManager\obj\Release\TaxManager.csproj.AssemblyReference.cache
+E:\Private\TaxManager\TaxManager\TaxManager\obj\Release\TaxManager.csproj.CoreCompileInputs.cache
+E:\Private\TaxManager\TaxManager\TaxManager\obj\Release\TaxManager.csproj.CopyComplete
+E:\Private\TaxManager\TaxManager\TaxManager\obj\Release\TaxManager.dll
+E:\Private\TaxManager\TaxManager\TaxManager\obj\Release\TaxManager.pdb

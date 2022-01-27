@@ -24,7 +24,10 @@ namespace TaxManager
                     var json = File.ReadAllText(AppConfiguration.ConfigurationPath);
                     x = json.DeserializeAsJson<TokenSettings>();
                 }
-                catch(Exception e) { }
+                catch (Exception e)
+                {
+                    throw;
+                }
 
                 if (x == null) x = new TokenSettings();
             }
@@ -32,7 +35,7 @@ namespace TaxManager
             return x;
         }
 
-        public string CashRegisterFactoryNumber { get; set; } 
+        public string CashRegisterFactoryNumber { get; set; }
 
         public string TokenPIN { get; set; }
 

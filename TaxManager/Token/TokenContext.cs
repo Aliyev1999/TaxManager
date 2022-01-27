@@ -5,7 +5,8 @@ using TaxManager.Requests;
 using TaxManager.Token.Request;
 using TaxManager.Token.Response;
 using System.Text;
-using ZeroMQ;
+using NetMQ.Sockets;
+using NetMQ;
 
 namespace TaxManager.Token
 {
@@ -28,20 +29,17 @@ namespace TaxManager.Token
         // requests
         private string ExecuteRequest(string message)
         {
-            using (var requester = new ZSocket(ZSocketType.REQ))
+            using (var client = new RequestSocket(">" + TaxAccess.Token.TokenAddress))  // connect
             {
-                string strt = TaxAccess.Token.TokenAddress;
-                requester.Connect(TaxAccess.Token.TokenAddress);
+                // Send a message from the client socket
                 using (var cts = new CancellationTokenSource(new TimeSpan(0, 0, 10)))
                 {
-                    requester.Send(new ZFrame(message));
+                    client.SendFrame(message);
 
-                    using (ZFrame reply = requester.ReceiveFrame())
-                    {
-                        string str = reply.ReadString();
+                    // Receive the response from the client socket
+                    string m2 = client.ReceiveFrameString();
 
-                        return str;
-                    }
+                    return m2;
                 }
             }
         }
